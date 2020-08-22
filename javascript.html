@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>My javascript</title>
+    </head>
+    <style type="text/css">
+    #enter{
+        margin-right: 10px;
+    }
+    
+    </style>
+    <body>
+        <p id="text">How many fingers am i holding up?</p>  
+        <input type="text" id="enter"><button id="guess">Guess</button>
+        <script>
+            document.getElementById("guess").onclick=function()
+            {
+            var random=Math.floor(Math.random()*5)
+            if (document.getElementById("enter").value==random)
+            {
+                alert("Well done!!!");
+            }
+            else{
+            alert("Oppps!!!,The number was "+random);
+            }
+            }
+        </script>
+
+    </body>
+    </html>
